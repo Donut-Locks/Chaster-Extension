@@ -1,19 +1,17 @@
-// const ExtensionDefinition = require('./baseclasses/extension/definition');
-// const ChasterLock = require('./baseclasses/lock/chasterLock');
-// const ExtensionLock = require('./baseclasses/lock/extensionLock');
-// const { Scheduler, RandomEventRule } = require('./baseclasses/scheduler/scheduler');
-// const TokenManager = require('./baseclasses/tokenManager');
+const ExtensionDefinition = require('./src/extension/definition');
+const ChasterLock = require('./src/lock/chasterLock');
+const ExtensionLock = require('./src/lock/extensionLock');
+const { Scheduler, RandomEventRule } = require('./src/scheduler/scheduler');
+const ChasterTokenManager = require('./src/token');
+const { ExtensionManager, ExtensionManagerScheduler } = require('./src/extension/manager')
 
-// (async()=>{
-    
-// })()
-
-// module.exports = {
-//     ExtensionDefinition,
-//     ChasterLock,
-//     ExtensionLock,
-//     Scheduler,
-//     ChasterRandom,
-//     RandomEventRule,
-//     TokenManager
-// }
+module.exports = {
+    ExtensionDefinition,
+    ChasterLock,
+    ExtensionLock,
+    Scheduler,
+    RandomEventRule,
+    ChasterTokenManager,
+    ExtensionManager,
+    ExtensionManagerScheduler
+}

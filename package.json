@@ -1,7 +1,7 @@
 {
-  "name": "chaster-extension",
-  "version": "1.0.0",
-  "description": "Package to interact with the chaster extension API",
+  "name": "chaster-extensions-test",
+  "version": "0.0.17",
+  "description": "Package to help interact with the Chaster Extension API.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,9 +9,14 @@
   },
   "author": "",
   "license": "ISC",
+  "exports": "./index.js",
+  "entry": "index.js",
   "dependencies": {
-    "node-fetch": "^2.6.1",
-    "node-schedule": "^2.1.1",
+    "jsonwebtoken": "^9.0.0",
+    "node-fetch": "^2.6.11",
+    "node-schedule": "^2.1.1"
+  },
+  "devDependencies": {
     "nodemon": "^2.0.22"
   }
 }
